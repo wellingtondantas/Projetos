@@ -30,6 +30,8 @@ def main():
 
 
 def text():
+    import streamlit as st
+
     st.title('Títulos, Texto, Links e Pontos')
 
     st.markdown(
@@ -50,11 +52,61 @@ def text():
             Dataset] (https://github.com/streamlit/demo-self-driving)
             - Explore a [New York City rideshare dataset]
             (https://github.com/streamlit/demo-uber-nyc-pickups)
+            - Docs [download](https://docs.streamlit.io/_/downloads/en/latest/pdf/)
         """
     )
 
+def image():
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+
+    from PIL import Image
+
+    st.title('Imagem')
+
+    image = Image.open('resources/img/fortaleza-city.png')
+
+    st.image(image, caption='Beautiful Fortaleza City', use_column_width=True)
+
+    st.title('Mapa')
+    map_data = pd.DataFrame(np.random.randn(25, 2) / [50, 50] + [-3.7381, -38.5350], columns=['lat', 'lon'])
+    st.map(map_data)
+
+
 def dataframe():
-    st.title('Dataframe')
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import pandas_datareader as web
+    
+    st.title('Tabelas de Dataframe')
+
+    #Obtem os dados históricos
+    df = web.DataReader('PETR4.SA', data_source='yahoo', start='2013-01-01', end='2021-01-02') 
+
+    st.write("Histórico de Preços da Ação PETR4.SA") 
+    st.dataframe(df)
+
 
 def plot():
-    st.title('Plots')
+    import streamlit as st
+    import matplotlib.pyplot as plt
+    import pandas as pd
+    import numpy as np
+    import pandas_datareader as web
+
+    st.title('Plotagem de Sinal (Histograma)')
+
+
+    arr = np.random.normal(1, 1, size=100)
+    fig, ax = plt.subplots()
+    ax.hist(arr, bins=20)
+
+    st.pyplot(fig)
+
+    st.title('Plotagem de Sinal')
+
+    df = web.DataReader('PETR4.SA', data_source='yahoo', start='2013-01-01', end='2021-01-02') 
+
+    st.line_chart(df['Close'])
