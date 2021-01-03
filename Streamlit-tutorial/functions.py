@@ -1,13 +1,13 @@
 #Functions utils to development fast
 
-#Lib
-import streamlit as st
-
 def main():
+    #libs
+    import streamlit as st
+
     st.sidebar.success('Selecione um item abaixo')
 
     st.markdown("<h1 style='color:#F00;'>Tutorial de desenvolvimento rápido com Streamlit Python (tags mais úteis)</h1>", unsafe_allow_html=True)
-
+    
     st.markdown(
         """
             O **Streamlit** 👈 é um pacote Python open-source para criação de layout fácil e com aparência bonita. 
@@ -30,10 +30,10 @@ def main():
 
 
 def text():
+    #libs
     import streamlit as st
 
     st.title('Títulos, Texto, Links e Pontos')
-
     st.markdown(
         """
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -57,16 +57,14 @@ def text():
     )
 
 def image():
+    #libs
     import streamlit as st
     import pandas as pd
     import numpy as np
-
     from PIL import Image
 
     st.title('Imagem')
-
     image = Image.open('resources/img/fortaleza-city.png')
-
     st.image(image, caption='Beautiful Fortaleza City', use_column_width=True)
 
     st.title('Mapa')
@@ -75,38 +73,34 @@ def image():
 
 
 def dataframe():
+    #libs
     import streamlit as st
     import pandas as pd
     import numpy as np
     import pandas_datareader as web
     
     st.title('Tabelas de Dataframe')
-
     #Obtem os dados históricos
     df = web.DataReader('PETR4.SA', data_source='yahoo', start='2013-01-01', end='2021-01-02') 
-
     st.write("Histórico de Preços da Ação PETR4.SA") 
     st.dataframe(df)
 
 
 def plot():
+    #Libs
     import streamlit as st
     import matplotlib.pyplot as plt
     import pandas as pd
     import numpy as np
     import pandas_datareader as web
 
+
     st.title('Plotagem de Sinal (Histograma)')
-
-
     arr = np.random.normal(1, 1, size=100)
     fig, ax = plt.subplots()
     ax.hist(arr, bins=20)
-
     st.pyplot(fig)
 
     st.title('Plotagem de Sinal')
-
     df = web.DataReader('PETR4.SA', data_source='yahoo', start='2013-01-01', end='2021-01-02') 
-
     st.line_chart(df['Close'])
