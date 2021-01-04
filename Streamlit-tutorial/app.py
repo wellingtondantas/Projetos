@@ -14,6 +14,8 @@ FUNCTIONS = OrderedDict(
         ('Imagens e Mapas', (functions.image, None)),
         ('Tabelas de Dataframe', (functions.dataframe, None)),
         ('Plotagem de Sinal', (functions.plot, None)),
+        ('Inserir HTML/CSS', (functions.htmlcss, None)),
+        ('Tipos de Entradas de dados', (functions.inputs, None)),
     ]
 )
 
