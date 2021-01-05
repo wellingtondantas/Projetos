@@ -1,0 +1,1 @@
+# Select de buscar de dados com agregação.
