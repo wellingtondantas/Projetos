@@ -1,0 +1,23 @@
+Desafio ETL (Pentaho Data Integration)
+
+1 - Ler a planilha local "META.xlsx";
+2 - Usar um banco de dados local SQLite "bancolocal.db";
+3 - Transformar os dados lidos e persistir no banco local SQLite, na tabela "meta" conforme estrutura abaixo;
+3 - Construir uma consulta SQL e gravar o resultado em um documento no formado CSV "meta.csv";
+
+Estrutura desejada da tabela
+
+CREATE TABLE meta (
+  anometa smallint,
+  mesmeta smallint,
+  vendedorcodigo varchar(255),
+  vendedornome varchar(255),
+  valormeta double precision
+);
+
+A consulta sql deve trazer as metas agrupadas (linhas) por codigo e vendedor.
+Deve trazer os meses em colunas (pivotada).
+O objetivo dessa consulta é extrair uma tabela no mesmo formato que a planilha foi desenhada.
+Uma outra solução aceita é pivotar os dados via ETL.
+
+Abraços,
