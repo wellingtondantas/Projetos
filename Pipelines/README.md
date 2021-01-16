@@ -5,3 +5,5 @@
 
 http://archive.ics.uci.edu/ml/machine-learning-databases/adult/
 
+##1° Parte :  Aplicação de modelagem tradicional
+
