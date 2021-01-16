@@ -7,3 +7,4 @@ http://archive.ics.uci.edu/ml/machine-learning-databases/adult/
 
 ##1° Parte :  Aplicação de modelagem tradicional
 
+##2° Parte :  Aplicação de modelagem com Pipeline
