@@ -14,3 +14,5 @@ http://archive.ics.uci.edu/ml/machine-learning-databases/adult/
 ##4° Parte : Buscando melhorias com Pipelines
 
 ##5° Parte : Pipeline mais otimizada
+
+##6° Parte : Pipeline mais otimizada com GridSearch
