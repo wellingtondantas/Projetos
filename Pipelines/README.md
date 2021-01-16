@@ -12,3 +12,5 @@ http://archive.ics.uci.edu/ml/machine-learning-databases/adult/
 ##3° Parte : Avaliação de modelos com o uso de Pipelines
 
 ##4° Parte : Buscando melhorias com Pipelines
+
+##5° Parte : Pipeline mais otimizada
