@@ -61,10 +61,10 @@ LogisticRegression	0.992390
 
 Random Forest	0.993921
 
-MLP	0.998487
+MLP	0.998487 (Melhor algoritmo)
 
 
-##Arquivo de dataset resposta
+## Arquivo de dataset resposta
 
 validation_data_com_LABEL.csv
 
