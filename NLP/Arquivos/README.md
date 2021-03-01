@@ -1,4 +1,4 @@
-# Instalação do Teste Prático para DS Axur
+# Instalação do Teste Prático
 
 Autor: Wellington Dantas
 
