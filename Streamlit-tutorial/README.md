@@ -40,6 +40,10 @@ Para:
 > (env)> streamlit run app.py
 ```
 
+## Demo - Demonstração
+
+https://streamlit.wellingtondanta.repl.co/
+
 
 ## Tela / Layout
 
