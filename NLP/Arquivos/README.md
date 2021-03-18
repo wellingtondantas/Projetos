@@ -46,25 +46,17 @@ Dentro do diretório do projeto, criar e ativar o virtual enviroment.
 f1_score
 
 Nearest Neighbors	0.966226
-
 Naive Bayes	0.986547
-
 AdaBoost	0.989313
-
 BaggingClassifier	0.989346
-
 Decision Tree	0.990881
-
 SVM	0.992390
-
 LogisticRegression	0.992390
-
 Random Forest	0.993921
+MLP	0.998487
 
-MLP	0.998487 (Melhor algoritmo)
 
-
-## Arquivo de dataset resposta
+##Arquivo de dataset resposta
 
 validation_data_com_LABEL.csv
 
